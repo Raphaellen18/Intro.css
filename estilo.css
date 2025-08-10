@@ -1,70 +1,100 @@
-body{
-    background-color: #959ce2;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
+/* seletor tag, onde selecionamos o elemento pelo seu nome dentro do html */
+h1 {
+  /* 
+  O RGB é um modelo de cores baseado na combinação das seguintes cores:
+
+  R: Red(vermelho)
+  G: Green(verde)
+  B: Blue(azul)
+
+  Usamos esse modelo, pos ele é usado para representar cores em telas. 
+  Exemplo: Monitores, TVs, Celulares e navegadores
+  
+  */
+  color: rgb(255, 0, 0);
+  text-align: center;
 }
 
-header {
-    background-color: #ffffff;
-    color: #2c3e50;
-    text-align: center;
-    text-transform: capitalize;
-    border-radius: 20px;
-
+/* usamos .(ponto final) para identificar uma class(classe) */
+.paragrafo-section {
+  color: gold;
 }
 
 p {
-    margin: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    text-transform: capitalize;
+  color: rgb(255, 255, 255);
+  text-align: justify;
 }
 
-h2 {
-    color: #2c3e50;
-    text-transform: capitalize;
-    text-align: center;
-   
+body {
+  background-color: rgb(14, 14, 14);
+}
+
+/* Usamos #(hashtag) para identificar o id - identifier(identificador) */
+#paragrafo-footer {
+  text-align: center;
 }
 
 section {
-    margin: 10px;
-    padding: 50px 50px;
-    background-color: #ecf0f1;
-    border-radius: 8px;
+  background-color: dodgerblue;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 15px;
+/* Seletor Descendente - Onde selecionamos todos os elementos que são descendentes do primeiro, ou seja, elementos filhos. */
+section h2 {
+  color: beige;
+  background-color: blueviolet;
 }
 
-img {
-    width: 770px;
-    height: 440px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    margin: 20px;
-    display: block;
+body {
+  background-color: darkblue;
+  font-family: sans-serif;
+}
+
+header {
+  background-color: yellowgreen;
+}
+
+header h1 {
+  background-color: lime;
+  width: 200px;
+  /* Para  deixar o texto minusculo */
+  text-transform: lowercase;
+
+  /* Para deixar o texto maiusculo */
+  text-transform: uppercase;
+
+  /* Para deixar a primeira letra de cada palavra maiuscula */
+  text-transform: capitalize;
 }
 
 main {
-    max-width: 800px;
-    margin: 20px;
-    padding: 100px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-main section h2 {
-    text-align: center;
+  background-color: violet;
 }
 
 main section {
-    text-align: inherit;
+  text-align: center;
 }
 
+main section p {
+  text-align: center;
+}
 
+section h2 {
+  /* padding-top: 20px; */
+  /* padding-left: 20px; */
+  /* padding-bottom: 20px; */
+  /* padding-right: 20px; */
 
+  /* shorthand - atalho*/
 
+  /* aplica em todas a direções (top, left, right, bottom) */
+  /* padding: 20px; */
+
+  /*  top/bottom | left/right   */
+  padding: 20px 10px;
+
+  /*    espessura / tipo de borda/ cor da borda  */
+  border: 3px solid black;
+
+  margin-top: 10px;
+  margin-left: 40px;
+}
